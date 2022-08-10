@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=410; user-scalable=no; minimal-ui">
+
     <title>ChessChat123</title>
     <link rel="stylesheet" href="lib/chessboard-0.3.0.min.css">
     <link rel="stylesheet" href="lib/WinJS.4.0/css/ui-light.css" />
@@ -35,24 +36,24 @@
       </div>
     </div>
 
-
-      
-
     <div class="page game" id='page-game'>
       <div class="page container">
         <div id="videos">
           <div id="localDrag">
             <video id="localVideo" autoplay playsinline></video>
+            <div class="button_maps">
+              <button id="webcamButton">Start Camera</button>
+              <button id="callButton" disabled>Create Call</button>
+            </div>
           </div>
-          <button id="webcamButton">Start Camera</button>
-          <button id="callButton" disabled>Create Call (offer)</button>
         </div>
   
         <div class="page main">
           <div id="GameRoomId"></div>
-          <div id="buttons_maps"></div>
-          <button id='game-back'>Back</button>
-          <button id='game-resign'>Resign</button>
+          <div class="button_maps">
+            <button id='game-back'>Back</button>
+            <button id='game-resign'>Resign</button>
+          </div>
           <div id='game-board' style="width: 600px"></div>
         </div>
         
@@ -60,10 +61,11 @@
         <div id="videos">
           <div id="remoteDrag">
             <video id="remoteVideo" autoplay playsinline></video>
+            <div class="button_maps">
+              <button id="answerButton" disabled>Answer</button>
+              <button id ="hangupButton" disabled>Hang Up</button>
+            </div>
           </div>
-          <!-- <input id="callInput" /> -->
-          <button id="answerButton" disabled>Answer</button>
-          <button id ="hangupButton" disabled>Hang Up</button>
         </div>
       </div>
     </div>
@@ -90,7 +92,6 @@ function dragElement(elmnt) {
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
-    console.log('click');
   }
 
   function dragMouseDown(e) {
