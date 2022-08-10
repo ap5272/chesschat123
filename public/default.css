@@ -116,12 +116,24 @@ div#videos {
 
 }
 
-div#videos > video {
+video {
     background: black;
     width: 400px;
     height: 400px;
     display: block;
     margin: 1em;
+}
+
+#localDrag{
+	position: absolute;
+  	z-index: 9;
+	cursor: move;
+}
+
+#remoteDrag{
+	position: absolute;
+  	z-index: 9;
+	cursor: move;
 }
 
 
