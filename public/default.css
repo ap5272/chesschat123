@@ -105,7 +105,7 @@ body {
 
 div#videos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 	flex: 1;
 	justify-content: center;
@@ -136,8 +136,12 @@ video {
 	cursor: move;
 }
 
-
 .button_maps {
+	
+	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: center;
+
 }
 
