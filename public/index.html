@@ -17,25 +17,6 @@
 
   <div class='page main'>
     <div class="page login" id='page-login'>
-      <h1>ChessChat123</h1> <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=410; user-scalable=no; minimal-ui">
-    <title>ChessChat123</title>
-    <link rel="stylesheet" href="lib/chessboard-0.3.0.min.css">
-    <link rel="stylesheet" href="lib/WinJS.4.0/css/ui-light.css" />
-    
-
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    
-    <link rel="stylesheet" href="/default.css" />
-  </head>
-  <body>
-
-  <div class='page main'>
-    <div class="page login" id='page-login'>
       <div class='logo'></div>
       <input id='username'></input>
       <button id='login'>Login</button>
@@ -92,93 +73,4 @@
 <script src="/default.js"></script>
 <script src="/connect.js"></script>
 </body>
-</html>
-      <h3>by Anand Parthiban</h3>
-      <div class='logo'></div>
-      <input id='username'></input>
-      <button id='login'>Login</button>
-    </div>
-
-    <div class="page lobby" id='page-lobby'>
-      <h1>ChessChat123</h1>
-      <h2 id='userLabel'></h2>
-      <h3>Active games</h3>
-      <div id='gamesList'>
-        No active games
-      </div>
-      <h3>Online players</h3>
-      <div id='userList'>
-        No users online
-      </div>
-    </div>
-
-
-      
-
-    <div class="page game" id='page-game'>
-      <div class="page container">
-        <div id="videos">
-          <video id="localVideo" autoplay playsinline></video>
-          <button id="webcamButton">Start Camera</button>
-          <button id="callButton" disabled>Create Call (offer)</button>
-        </div>
-  
-        <div class="page main">
-          <div id="buttons_maps"></div>
-          <button id='game-back'>Back</button>
-          <button id='game-resign'>Resign</button>
-          <div id='game-board' style="width: 600px"></div>
-        </div>
-        
-  
-        <div id="videos">
-          <video id="remoteVideo" autoplay playsinline></video>
-          <input id="callInput" />
-          <button id="answerButton" disabled>Answer</button>
-          <button id ="hangupButton" disabled>Hang Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-  <!-- <div class="mdc-dialog"
-       id="room-dialog"
-       role="alertdialog"
-       aria-modal="true"
-       aria-labelledby="my-dialog-title"
-       aria-describedby="my-dialog-content">
-      <div class="mdc-dialog__container">
-          <div class="mdc-dialog__surface">
-              <h2 class="mdc-dialog__title" id="my-dialog-title">Join room</h2>
-              <div class="mdc-dialog__content" id="my-dialog-content">
-                  Enter ID for room to join:
-                  <div class="mdc-text-field">
-                      <input type="text" id="room-id" class="mdc-text-field__input">
-                      <label class="mdc-floating-label" for="my-text-field">Room ID</label>
-                      <div class="mdc-line-ripple"></div>
-                  </div>
-              </div>
-              <footer class="mdc-dialog__actions">
-                  <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
-                      <span class="mdc-button__label">Cancel</span>
-                  </button>
-                  <button id="confirmJoinBtn" type="button" class="mdc-button mdc-dialog__button"
-                          data-mdc-dialog-action="yes">
-                      <span class="mdc-button__label">Join</span>
-                  </button>
-              </footer>
-          </div>
-      </div>
-      <div class="mdc-dialog__scrim"></div>
-  </div> -->
-
-    <script src="lib/socket.io-1.2.0.js"></script>
-    <script src="lib/jquery-1.11.1.js"></script>
-    <script src="lib/WinJS.4.0/js/WinJS.min.js"></script>
-    <script src="lib/chess.min.js"></script> 
-    <script src="lib/chessboard-0.3.0.min.js"></script> 
-    <script src="/default.js"></script>
-    <script src="/connect.js"></script>
-  </body>
 </html>
