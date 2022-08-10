@@ -47,7 +47,8 @@
         console.log("joined as game id: " + msg.game.id );   
         playerColor = msg.color;
         initGame(msg.game);
-        
+        $('#GameRoomId').text('Game Room: '+String(msg.game.id));
+
         $('#page-lobby').hide();
         $('#page-game').show();
         
