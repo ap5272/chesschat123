@@ -2,7 +2,8 @@
 
 Deployed at: https://chesschat123.herokuapp.com/
 
-How to play
-1. Enter a username
-2. Choose another player in the lobby
-3. Click to move your pieces.
+## No longer do you need Discord or Zoom open in another window as you play a game wit your friend!
+
+### ChessChat is a web app that allows players to play with one another while talking over video chat!
+
+
